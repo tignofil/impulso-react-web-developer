@@ -1,0 +1,6 @@
+Site para retirar informacoes da imagem e reduzir tamanho (https://tinypng.com/)
+
+
+----- CSS -----
+[ . ] no css representa classe
+[ # ] no css representa id e so pode ser usado uma vez na pagina
