@@ -1,0 +1,62 @@
+Case Type                                             Example
+
+- Original Variable as String                         some awesome var
+- Camel Case                                          someAwesomeVar
+- Snake Case                                          some_awesome_var
+- Kebab Case                                          some-awesome-var
+- Pascal Case                                         SomeAwesomeVar
+- Upper Case Snake Case                               SOME_AWESOME_VAR
+
+
+-----------------///\\\-----------------
+
+var, let e const
+
+           |       var       |    const    |    let    |
+escopo     | global ou local |    bloco    |   bloco   |
+redeclarar |       sim       |     não     |    não    |
+reatribuir |       sim       |     não     |    sim    |
+hoisting   |       sim       |     não     |    não    |
+
+
+-----------------///\\\-----------------
+
+Strings
+
+Metodos importantes:
+- Concaenação
+- Propriedade length
+- Iterabilidade
+- Formatação
+
+Number
+Operações aritmeticas
+
+Booleans
+true ou false
+
+Arrays
+Lista iterável de elementos
+
+- push -> add elemento
+- pop -> remove o ultimo elemento
+- shift -> remove o primeiro elemento
+- unshift -> add no primeiro elemento
+
+
+Objetos
+EStrutura tipo "chave e valor"
+
+let person = {
+    name: 'John',
+    age: 20
+};
+
+
+Empty,null e undefined
+Todos eles são diferentes de true
+
+
+
+
+
