@@ -1,0 +1,52 @@
+----------------- Map -----------------
+- Estrutura 
+const myMap = new Map()
+
+caracteristicas:
+- Uma coleção de arrays no formato [chave, valor];
+- Pode iterado por um loop for...of;
+
+métodos:
+- Adicionar 
+myMap.set('apple','fruit);
+
+- Ler
+myMap.get('apple);
+
+- Deletar
+myMap.delete('apple);
+
+Map vs Objeto
+- Maps podem ter chaves de qualquer tipo;
+- Maps possuem a propriedade length;
+- Maps são mais fáceis de iterar;
+- Utilizado quando o valor das chaves é desconhecido
+- Os valores tem o mesmo tipo.
+
+
+
+----------------- Set -----------------
+Estrutura
+const myArray = [1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 2, 1];
+
+const mySet = new Set(myArray);
+
+Sets são estruturas que armazenam apenas valores únicos.
+
+métodos
+- Adicionar
+mySet.add(1);
+mySet.add(5);
+
+- Consultar
+mySet.has(1);
+mySet.has(3);
+
+mySet.delete(3);
+
+
+Set vs Array
+- Possui valores únicos;
+- Em vez da propriedade length, consulta-se o número de registors pela propriedade size;
+- Não possui os métodos map, filter, reduce etc.
+
