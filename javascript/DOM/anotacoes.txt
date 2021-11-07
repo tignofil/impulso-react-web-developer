@@ -1,0 +1,81 @@
+------- O que é DOM -------
+
+DOM - Document Object Model
+O DOM HTML é um padrão de como acessar e modificar os elemetos HTML de uma página.
+
+
+DOM vs BOM
+
+BOM -  Browser Object Model
+Esta vinculado a janela do navegador, tudo ques esta abaixo e o BOM.
+O DOM(document) faz parte do BOM.
+Tudo o que está dentro do objeto window.
+
+
+
+------- Métodos do DOM -------
+Estrutura HTML
+Tags, classes e ids.
+
+Selecionando elementos de uma página.
+
+var titulo = document.getElementById('titulo');
+console.log(titulo);
+
+var li  = document.getElementsByTagName('li');
+console.log(li);
+
+var textos = document.getElementsByClassName('textos');
+console.log(textos);
+
+document.querySelectorAll('.primeira-classe .segunda-classe');
+document.querySelectorAll('li .opcao');
+
+---- Adicionar e deletar ----
+
+document.createElement(element) ---> Cria um novo elemento HTML
+document.removeChild(element) ---> Remove um elemento
+document.appendChild(element) ---> Adiciona um elemento
+document.replaceChild(new, old) ---> Substitui um elemento
+
+---- Trabalhando com estilos ----
+
+const meuElemento = document.getElementById('meu-elemento');
+
+meuElemento.classList.add('novo-estilo')
+//Adiciona a classe "meu estilo"
+
+meuElemento.classList.remove("classe")
+//Remove a classe "classe"
+
+meuElemento.classList.toggle("dark-mode")
+// Adiona a classe "dark-mode" caso ela não faça parte da lista e remove ela caso faça
+
+
+---- CSS ----
+Acessando diretamente o CSS de um elemento
+document.getElementsByTagName('p').style.color = 'blue'
+
+--------- Eventos ---------
+Tipos 
+Eventos de mouse =  mouseover , mouseout, click, dbclick, change, load
+
+
+Acionando os Eventos
+
+Event listener -> diretamente no javascript, cria um evento que vai ser acionado no momento em que o śuário realizar determicada ação.
+const botao = document.getElementById('meuBotao');
+
+botao.addEventListener("click", outraFuncao);
+
+Atributo HTML
+<h1 onclick="mudaTexto(this)">Clique aqui!</h1>
+
+<script>
+    function mudaTexto(id){
+        id.innerHTML = "Mudei";
+    }
+</script>
+
+Especifica a função a ser chamda diretamenteno elemento HTML.
+
