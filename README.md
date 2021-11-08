@@ -8,3 +8,4 @@
 - [UX/UI](https://github.com/tignofil/impulso-react-web-developer/tree/master/ux_ui)
 - [Desafio/Netflix](https://github.com/tignofil/impulso-react-web-developer/tree/master/desafio%20-%20Interface%20do%20Netflix)
 - [Javascript](https://github.com/tignofil/impulso-react-web-developer/tree/master/javascript)
+- [Desafio/Dino](https://github.com/tignofil/impulso-react-web-developer/tree/master/desafio%20-%20Dino)
