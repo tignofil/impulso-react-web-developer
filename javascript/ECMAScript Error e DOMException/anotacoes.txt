@@ -1,0 +1,82 @@
+----- Tratamento de erros -----
+
+--- ECMAScript error 
+Erros que ocorrem me tempo de execução.
+
+Composto por:
+- Mensagem
+- Nome
+- Linha
+- Call Stack
+
+--- DOMException 
+Erros relacionados ao Document Object Model
+
+--- Trhow, return, try e catch
+- return
+Vai aparecer uma string com a frase "String inválida"
+function verificaPalindromo(string) {
+  if (!string) return "String inválida";
+
+  return string === string.split("").reverse().join("");
+}
+
+- Trhow
+Vai aparecer um erro com a frase "String inválida"
+function verificaPalindromo(string) {
+  if (!string) trhow "String inválida";
+
+  return string === string.split("").reverse().join("");
+}
+
+
+- Try/Catch
+function verificaPalindromo(string) {
+  if (!string) return "String inválida";
+
+  return string === string.split("").reverse().join("");
+}
+
+function tryCatExemplo(string) {
+  try {
+    verificaPalindromo(string);
+  } catch (error) {
+    throw error;
+  }
+}
+
+tryCatExemplo("");
+
+- Try/Catch/Finally
+
+
+function verificaPalindromo(string) {
+  if (!string) return "String inválida";
+
+  return string === string.split("").reverse().join("");
+}
+
+function tryCatExemplo(string) {
+  try {
+    verificaPalindromo(string);
+  } catch (error) {
+    throw error;
+  } finally{
+      console.log(`A string enviada foi: ${string`);
+  }
+}
+
+--- Debugging e Error Handling
+- Error personalisado
+
+new Error(message, filename, lineNumber);
+
+const MeuErro = new Error("Mensahgem invalida");
+
+throw MeuErro;
+
+- Colocando um nome no erro
+const MeuErro = new Error("Mensahgem invalida");
+MeuErro.name = "InvalidMessage";
+
+throw MeuErro;

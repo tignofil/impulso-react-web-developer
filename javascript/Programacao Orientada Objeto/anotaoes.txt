@@ -1,0 +1,75 @@
+----- paradigmas -----
+Os programas são "objetos" que possuem uma serie de propriedades.
+
+pilares:
+- Herança
+- Polimorfismo
+- Encapsulamento
+- Abstração
+
+- Abstração
+"Processo mental que consiste em isolar um aspecto determinado de um estado de coisas relativamente complexo, a fim de simplificar a sua avaliação, classificação ou para permitir a comunicação do mesmo."
+
+- Herença
+O objeto filho herda propriedades e métodos do objeto pai.
+
+- Encapsulamento
+Cada classe tem propriedades e métodos independentes do restante do código.
+
+- Polimorfismo
+Objetos podem herdar a mesma classe pai, mas se comportarem de forma diferente quando invocamos seus métodos.
+
+
+----- OOJS -----
+- Protótipos
+Todos os objetos Javascript herdam propriedades e métodos de um prototype.
+O objeto Object.prototype está no topo desta cadeia.
+
+Classes no javascript não existem.
+Syntatic sugar: uma sintaxe feita para facilitar a escrita.
+
+class Meal {
+  constructor(food) {
+    this.food = food;
+  }
+  eat() {
+    return "A";
+  }
+}
+
+Javascript não possui classes nativamente. Todas as classes são objetos e a herança se dá por Protótipos.
+
+
+class Animal {
+  constructor(type = "animal") {
+    this.type = type;
+  }
+
+  get type() {
+    return this._type;
+  }
+
+  set type(val) {
+    this._type = val.toUpperCase();
+  }
+
+  makeSound() {
+    console.log("Making animal sound");
+  }
+}
+
+let a = new Animal();
+console.log(a.type);
+
+class Cat extends Animal {
+  constructor() {
+    super("cat");
+  }
+  makeSound() {
+    super.makeSound();
+    console.log("Meow!");
+  }
+}
+
+let b = new Cat();
+console.log(b.type);
